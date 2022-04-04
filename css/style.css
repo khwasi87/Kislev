@@ -1,0 +1,113 @@
+*{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+}
+
+.searcharea{
+    width: 100%;
+    max-width: 436px;
+    background: rgb(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border: 1px solid #b4b4b4;
+    border-radius: 60px;
+    padding: 5px 5px;
+}
+
+.searcharea input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 25px;
+    font-size: 16px;
+    font-style: italic;
+    color: #313b47;
+}
+
+.searcharea button{
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FFA500;
+    cursor: pointer;
+
+}
+
+.sideicons ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 16px;
+}
+
+.sideicons{
+    font-size: 18px;
+    color: #9C9D9D;
+}
+
+/* header end */
+
+/* middle section */
+
+.container{
+    padding: 32px;
+    margin: 16px auto;
+    background-color: #E8E8E8;
+}
+
+.sectionContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 18px auto;
+}
+
+.sectionContent .filtersection p{
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313b47;
+}
+
+.sectionContent .filtersection p span{
+    background: transparent;
+    border: 1px solid #313b47;
+    border-radius: 30px;
+    padding: 5px 16px;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 29px;
+    font-size: 16px;
+    background: transparent;
+    background-image: url('../img/angle-down-solid.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    background-size: 10px;
+}
+
+form{
+    font-size: 18px;
+}
+
+/* middle-section-end */

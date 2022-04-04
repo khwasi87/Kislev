@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="filter">
+            <i class="fa-solid fa-sliders fa-2x" style="color: #9C9D9D;"></i>
+        </div>
+        <form action="/action_page.php" class="searcharea">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><img src="img/magnifying-glass-solid.svg" width="20" alt=""></button>
+        </form>
+        <div class="sideicons">
+            <ul>
+                <li>
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <p>User</p>
+                </li>
+                <li>
+                    <p><i class="fa-solid fa-file-lines"></i></p>
+                    <p>orders</p>
+                </li>
+                <li>
+                    <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    <p>Cart</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h1>Recommended products</h1>
+            <div class="sectionContent">
+                <div class="filtersection">
+                    <p>Selected</p>
+                    <p><span>continental
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        </span> 
+                    </p>
+                </div>
+                <form action="/action_page.php">
+                    <label for="dropdown">Sort by:</label>
+                    <select name="ratings" id="rateSelect">
+                        <option value="Selected" disabled selected>Popularity</option>
+                        <option value="Lowest_Price">Lowest Price</option>
+                        <option value="Most_stock">Most Stock</option>
+                        <option value="Model">Model A-Z</option>
+                        <option value="Code_no">Code No.</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <main>
+            <div class="carousalbox">
+                <div class="carousalimg">
+                    <img src="img/Tyrelogo.png" alt="tyre-logo">
+                </div>
+                <h1>Continental - Contiecocontact 5</h1>
+                <div class="carboxinfo">
+                    <img src="img/Logo_OE.png" alt="Oe-logo">
+                    <div class="modelinfo">
+                        <p>205/55 R16 H</p>
+                        <p>SUV</p>
+                    </div>
+                    <div class="Stockinfo">
+                        <p>Stock <i class="fa-solid fa-circle-check"></i></p>
+                        <p>price <span></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
