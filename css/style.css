@@ -114,8 +114,77 @@ form{
 
 /* Top carouselbox */
 
+.boxmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousalbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carouselboxcontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .carousalbox{
     background-color: #ffffff;
     border-radius: 6px;
     padding: 16px;
 }
+
+.addbtn button{
+    background-color: #FFA500;
+    border-radius: 30px;
+    border: 0;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cartbtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* counter add minus */
+
+.addminus{
+   width: 100%;
+   max-width: 200px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.addminus input{
+   width: 40px;
+   text-align: center;
+   background-color: #9C9D9D;
+   border: 0;
+   font-weight: 700;
+}
+
+.addminus button{
+    border: 1px solid #E0E0E0;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.addminus input,button{
+    display: inline;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* counter add minus end */
