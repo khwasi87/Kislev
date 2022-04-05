@@ -1,0 +1,25 @@
+@media screen and (max-width:1300px) {
+    .carboxinfo h3 {
+        font-size: 1rem;
+    }
+
+    .carouselboxcontent .info {
+        margin: 22px auto;
+        font-size: 0.8em;
+        padding: 0 8px;
+    }
+
+    .carousalbox .carousalimg, .carboxinfo {
+        padding: 4px;
+        margin: 0px 6px;
+    }
+
+    .btnotxt,.btnotxt1{
+        display: block;
+    }
+
+    .btntxt,.btntxt1{
+        display: none;
+    }
+
+}
