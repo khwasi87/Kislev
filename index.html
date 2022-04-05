@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resposive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
 </head>
@@ -21,15 +22,15 @@
             <ul>
                 <li>
                     <p><i class="fa-solid fa-user"></i></p>
-                    <p>User</p>
+                    <p><i>User</i></p>
                 </li>
                 <li>
                     <p><i class="fa-solid fa-file-lines"></i></p>
-                    <p>orders</p>
+                    <p><i>orders</i></p>
                 </li>
                 <li>
                     <p><i class="fa-solid fa-cart-shopping"></i></p>
-                    <p>Cart</p>
+                    <p><i>Cart</i></p>
                 </li>
             </ul>
         </div>
@@ -46,7 +47,7 @@
                     </p>
                 </div>
                 <form action="/action_page.php">
-                    <label for="dropdown">Sort by:</label>
+                    <label for="dropdown"><b>Sort by:<b></label>
                     <select name="ratings" id="rateSelect">
                         <option value="Selected" disabled selected>Popularity</option>
                         <option value="Lowest_Price">Lowest Price</option>
@@ -60,24 +61,27 @@
         <main>
             <div class="boxmain">
                 <div class="carousalbox">
+                    <div class="label">
+                        <p>premium Bestseller</p>
+                    </div>
                     <div class="carousalimg">
                         <img src="img/Tyrelogo.png" alt="tyre-logo">
                     </div>
                     <div class="carboxinfo">
-                        <h1>Continental - Contiecocontact 5</h1>
+                        <h3>Continental - Contiecocontact 5</h3>
                         <div class="carouselboxcontent">
                             <img src="img/Logo_OE.png" alt="Oe-logo">
-                            <div class="modelinfo">
+                            <div class="info">
                                 <p>205/55 R16 H</p>
                                 <p>SUV</p>
                             </div>
-                            <div class="Stockinfo">
+                            <div class="info">
                                 <p>Stock <i class="fa-solid fa-circle-check"></i></p>
                                 <p>price <span></span>₪340</p>
                             </div>
-                            <div class="totalinfo">
+                            <div class="info">
                                 <p>Total</p>
-                                <p>₪1,360</p>
+                                <p><strong>₪1,360</strong></p>
                             </div>
                         </div>
                         <div class="cartbtn">
@@ -93,31 +97,34 @@
                     </div>
                 </div>
                 <div class="carousalbox">
+                    <div class="label">
+                        <p>Economy Bestseller</p>
+                    </div>
                     <div class="carousalimg">
                         <img src="img/Tyrelogo.png" alt="tyre-logo">
                     </div>
                     <div class="carboxinfo">
-                        <h1>Continental - Contiecocontact 5</h1>
+                        <h3>Continental - Contiecocontact 5</h3>
                         <div class="carouselboxcontent">
                             <img src="img/Logo_OE.png" alt="Oe-logo">
-                            <div class="modelinfo">
+                            <div class="info">
                                 <p>205/55 R16 H</p>
                                 <p>SUV</p>
                             </div>
-                            <div class="Stockinfo">
+                            <div class="info">
                                 <p>Stock <i class="fa-solid fa-circle-check"></i></p>
                                 <p>price <span></span>₪340</p>
                             </div>
-                            <div class="totalinfo">
+                            <div class="info">
                                 <p>Total</p>
-                                <p>₪1,360</p>
+                                <p><strong>₪1,360</strong></p>
                             </div>
                         </div>
                         <div class="cartbtn">
                             <div class="addminus">
-                                <button id="minus"><i class="fa-solid fa-minus"></i></button>
-                                <input type="number" value="0" id="numb">
-                                <button id="add"><i class="fa-solid fa-plus"></i></button>
+                                <button id="minus1"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" value="0" id="numb1">
+                                <button id="add1"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="addbtn">
                                 <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
@@ -125,6 +132,93 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="content-table">
+                <h3>Continental<br>Contiecocontact 5</h3>
+                <img src="img/Logo_OE.png" alt="Oe-logo">
+                <div class="info">
+                    <p>205/55 R16 H</p>
+                    <p>SUV</p>
+                </div>
+                <div class="info">
+                    <p>Stock <i class="fa-solid fa-circle-check"></i></p>
+                    <p><strong>8 Tires Left</strong></p>
+                </div>
+                <div class="info">
+                    <p>price ₪340</p>
+                </div>
+                <div class="addminus">
+                    <button id="minus1"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" value="0" id="numb1">
+                    <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="infoT">
+                    <p>Total</p>
+                    <p><strong>₪1,360</strong></p>
+                </div>
+                <div class="addbtn">
+                    <button class="btntxt"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                    <button class="btnotxt"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="content-table">
+                <h3>Continental<br>Contiecocontact 5</h3>
+                <img src="img/Logo_OE.png" alt="Oe-logo">
+                <div class="info">
+                    <p>205/55 R16 H</p>
+                    <p>SUV</p>
+                </div>
+                <div class="info">
+                    <p>Stock <i class="fa-solid fa-circle-check"></i></p>
+                    <p><strong>8 Tires Left</strong></p>
+                </div>
+                <div class="info">
+                    <p>price ₪340</p>
+                </div>
+                <div class="addminus">
+                    <button id="minus1"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" value="0" id="numb1">
+                    <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="infoT">
+                    <p>Total</p>
+                    <p><strong>₪1,360</strong></p>
+                </div>
+                <div class="addbtn">
+                    <button class="btntxt"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                    <button class="btnotxt"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="content-table">
+                <h3>Continental<br>Contiecocontact 5</h3>
+                <img src="img/Logo_OE.png" alt="Oe-logo">
+                <div class="info">
+                    <p>205/55 R16 H</p>
+                    <p>SUV</p>
+                </div>
+                <div class="info">
+                    <p>Stock <i class="fa-solid fa-circle-xmark"></i></p>
+                    <p><strong>8 Tires Left</strong></p>
+                </div>
+                <div class="info">
+                    <p>price ₪340</p>
+                </div>
+                <div class="addminus">
+                    <button id="minus1"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" value="0" id="numb1">
+                    <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="infoT">
+                    <p>Total</p>
+                    <p><strong>₪1,360</strong></p>
+                </div>
+                <div class="addbtn">
+                    <button class="btntxt1"><i class="fa-solid fa-bell"></i> Notify Me</button>
+                    <button class="btnotxt1"><i class="fa-solid fa-bell"></i></button>
+                </div>
+            </div>
+            <div class="btnfooter">
+                <button><a href="#">Load More Results</a></button>
             </div>
         </main>
     </div>
