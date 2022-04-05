@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main:#FFA500;
+    --Border:#b4b4b4;
+    --Text:#313b47;
+    --iconscolor : #9C9D9D;
+    --mainBg:#E8E8E8;
+    --white:#ffffff;
+}
+
 /* header */
 
 header{
@@ -21,7 +30,7 @@ header{
     background: rgb(255,255,255,0.2);
     display: flex;
     align-items: center;
-    border: 1px solid #b4b4b4;
+    border: 1px solid var(--Border);
     border-radius: 60px;
     padding: 5px 5px;
 }
@@ -32,9 +41,9 @@ header{
     border: 0;
     outline: none;
     padding: 5px 25px;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: italic;
-    color: #313b47;
+    color: var(--Text);
 }
 
 .searcharea button{
@@ -43,7 +52,7 @@ header{
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: #FFA500;
+    background-color: var(--main);
     cursor: pointer;
 
 }
@@ -55,8 +64,8 @@ header{
 }
 
 .sideicons{
-    font-size: 18px;
-    color: #9C9D9D;
+    font-size: 1rem;
+    color: var(--iconscolor);
 }
 
 /* header end */
@@ -66,7 +75,7 @@ header{
 .container{
     padding: 32px;
     margin: 16px auto;
-    background-color: #E8E8E8;
+    background-color: var(--mainBg);
 }
 
 .sectionContent{
@@ -79,14 +88,14 @@ header{
 
 .sectionContent .filtersection p{
     display: inline;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     color: #313b47;
 }
 
 .sectionContent .filtersection p span{
     background: transparent;
-    border: 1px solid #313b47;
+    border: 1px solid var(--Text);
     border-radius: 30px;
     padding: 5px 16px;
 }
@@ -98,7 +107,7 @@ form select{
     padding: 10px 20px;
     outline: none;
     border-radius: 29px;
-    font-size: 16px;
+    font-size: 1rem;
     background: transparent;
     background-image: url('../img/angle-down-solid.svg');
     background-repeat: no-repeat;
@@ -107,7 +116,7 @@ form select{
 }
 
 form{
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 /* middle-section-end */
@@ -126,39 +135,97 @@ form{
     align-items: center;
 }
 
+.carousalimg img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.carousalbox .carousalimg,.carboxinfo{
+    padding: 14px;
+    margin: 5px 16px;
+}
+
+.carboxinfo h3{
+    font-size: 1.5rem;
+    color: var(--Text);
+}
+
 .carouselboxcontent{
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   align-items: center;
+}
+
+.carouselboxcontent .info{
+    margin: 16px auto;
+    font-size: 1em;
+    padding: 0 16px;
+    color: var(--Text);
 }
 
 
 .carousalbox{
-    background-color: #ffffff;
-    border-radius: 6px;
-    padding: 16px;
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 8px;
+    position: relative;
 }
 
 .addbtn button{
-    background-color: #FFA500;
+    background-color: var(--main);
     border-radius: 30px;
     border: 0;
     width: 100%;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
+
+.addbtn .btntxt1{
+    background-color: transparent;
+    border:1px solid var(--main);
+    border-radius: 30px;
+}
+
+.addbtn .btnotxt1{
+    background-color: transparent;
+    border:1px solid var(--main);
+    border-radius: 30px;
+}
+
+.btnotxt,.btnotxt1{
+    display: none;
+}
+
 
 .cartbtn{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
+
+.cartbtn div{
+    margin: 15px auto;
+}
+
+.label{
+    position: absolute;
+    background-color: var(--main);
+    padding: 4px 8px;
+    top: -10px;
+    left: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Text);
+}
+
+/* Top carouselbox end */
 
 /* counter add minus */
 
 .addminus{
    width: 100%;
-   max-width: 200px;
+   max-width: 140px;
 }
 
 input::-webkit-outer-spin-button,
@@ -170,21 +237,73 @@ input::-webkit-inner-spin-button {
 .addminus input{
    width: 40px;
    text-align: center;
-   background-color: #9C9D9D;
+   background-color: var(--iconscolor);
    border: 0;
    font-weight: 700;
+   outline: none;
 }
 
 .addminus button{
-    border: 1px solid #E0E0E0;
+    border: 1px solid var(--Border);
     outline: none;
-    background-color: #ffffff;
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 .addminus input,button{
     display: inline;
     padding: 8px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* counter add minus end */
+
+/* section table */
+
+.content-table{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    margin: 10px auto;
+    padding: 14px;
+    color: var(--Text);
+}
+
+.content-table .infoT p{
+    display: inline-block;
+    color: var(--Text);
+}
+
+.content-table .addbtn button{
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.content-table h3{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: var(--Text);
+}
+
+/* section table end */
+
+.btnfooter button{
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    padding: 15px 0;
+    background: transparent;
+    border: 1px solid var(--Text);
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.btnfooter button a{
+    text-decoration: none;
+    color: var(--Text);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
