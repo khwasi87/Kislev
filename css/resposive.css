@@ -1,3 +1,55 @@
+@media screen and (max-width:768px) {
+    
+    .container-mobile{
+        display: block;
+        padding: 32px;
+        margin: 16px auto;
+        background-color: var(--mainBg);
+    }
+
+    .container{
+        display: none;
+    }
+
+    .boxmainsm{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousalboxsm{
+        background-color: var(--white);
+        border-radius: 4px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .carinfoboxsm{
+        display: flex;
+        align-items: center;
+    }
+
+    .suvifosm{
+        display: flex;
+        align-items:  center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .infosm{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .content-tablesm{
+        background-color: var(--white);
+        margin: 10px auto;
+        padding: 14px;
+        color: var(--Text);
+    }
+}
+
 @media screen and (max-width:1300px) {
     .carboxinfo h3 {
         font-size: 1rem;

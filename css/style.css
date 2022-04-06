@@ -12,6 +12,8 @@
     --iconscolor : #9C9D9D;
     --mainBg:#E8E8E8;
     --white:#ffffff;
+    --check:#1be274fa;
+    --danger:#f32121fb;
 }
 
 /* header */
@@ -70,12 +72,24 @@ header{
 
 /* header end */
 
-/* middle section */
+/* main container */
 
 .container{
     padding: 32px;
     margin: 16px auto;
     background-color: var(--mainBg);
+}
+
+.container-mobile{
+    display: none;
+}
+
+/* main container end */
+
+/* middle section */
+
+section{
+    margin: 20px auto;
 }
 
 .sectionContent{
@@ -287,6 +301,16 @@ input::-webkit-inner-spin-button {
 
 .btnotxt,.btnotxt1{
     display: none;
+}
+
+.content-table .infos .fa-circle-check{
+    color: var(--check);
+}
+.content-table .infos .fa-circle-exclamation{
+    color: var(--danger);
+}
+.content-table .infos .fa-circle-xmark{
+    color: var(--main)
 }
 
 /* section table end */
