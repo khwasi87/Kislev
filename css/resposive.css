@@ -44,9 +44,55 @@
     }
     .content-tablesm{
         background-color: var(--white);
-        margin: 10px auto;
-        padding: 14px;
+        margin: 10px 0;
+        padding: 10px;
         color: var(--Text);
+    }
+
+    .maintablesm{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tablecontsm{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tablecontsm h3{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .prtotal{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logost{
+        display: flex;
+        align-items: center;
+    }
+
+    .logost img,div{
+        padding: 0 5px;
+    }
+    .logost img{
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .btntxt,.btntxt1{
+        display: block!important;
+    }
+
+    .btnotxt,.btnotxt1{
+        display: none!important;
     }
 }
 

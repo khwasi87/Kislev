@@ -303,14 +303,14 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
-.content-table .infos .fa-circle-check{
+.infos .fa-circle-check{
     color: var(--check);
 }
-.content-table .infos .fa-circle-exclamation{
-    color: var(--danger);
+.infos .fa-circle-exclamation{
+    color: var(--main);
 }
-.content-table .infos .fa-circle-xmark{
-    color: var(--main)
+.infos .fa-circle-xmark{
+    color: var(--danger)
 }
 
 /* section table end */
