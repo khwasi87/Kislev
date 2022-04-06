@@ -1,11 +1,17 @@
-var btnAdd = document.querySelector('#add');
-var btnMinus = document.querySelector('#minus');
-var inputNumb = document.querySelector('#numb');
+var total;
 
-btnAdd.addEventListener('click', ()=>{
-    inputNumb.value = parseInt(inputNumb.value) + 1;
+$('.field').change(function() {
+
+}).trigger('change');
+
+$('.add').click(function() {
+  var target = $('.field', this.parentNode)[0];
+  target.value = +target.value + 1;
 });
 
-btnMinus.addEventListener('click', ()=>{
-    inputNumb.value = parseInt(inputNumb.value) - 1;
+$('.sub').click(function() {
+  var target = $('.field', this.parentNode)[0];
+  if (target.value > 0) {
+    target.value = +target.value - 1;
+  }
 });

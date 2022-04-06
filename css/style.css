@@ -133,6 +133,10 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
 }
 
 .carousalimg img{
@@ -163,14 +167,6 @@ form{
     color: var(--Text);
 }
 
-
-.carousalbox{
-    background-color: var(--white);
-    border-radius: 4px;
-    padding: 8px;
-    position: relative;
-}
-
 .addbtn button{
     background-color: var(--main);
     border-radius: 30px;
@@ -180,22 +176,6 @@ form{
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-}
-
-.addbtn .btntxt1{
-    background-color: transparent;
-    border:1px solid var(--main);
-    border-radius: 30px;
-}
-
-.addbtn .btnotxt1{
-    background-color: transparent;
-    border:1px solid var(--main);
-    border-radius: 30px;
-}
-
-.btnotxt,.btnotxt1{
-    display: none;
 }
 
 
@@ -284,6 +264,29 @@ input::-webkit-inner-spin-button {
     font-size: 1rem;
     text-decoration: underline;
     color: var(--Text);
+}
+
+.content-table .infos{
+    max-width: 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.addbtn .btntxt1{
+    background-color: transparent;
+    border:1px solid var(--main);
+    border-radius: 30px;
+    padding: 10px 30px!important;
+}
+
+.addbtn .btnotxt1{
+    background-color: transparent;
+    border:1px solid var(--main);
+    border-radius: 30px;
+}
+
+.btnotxt,.btnotxt1{
+    display: none;
 }
 
 /* section table end */
