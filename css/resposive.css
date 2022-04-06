@@ -7,6 +7,12 @@
         background-color: var(--mainBg);
     }
 
+    .carousalimg img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+
     .container{
         display: none;
     }
@@ -45,7 +51,7 @@
     .content-tablesm{
         background-color: var(--white);
         margin: 10px 0;
-        padding: 10px;
+        padding: 14px;
         color: var(--Text);
     }
 
@@ -81,8 +87,9 @@
     .logost img,div{
         padding: 0 5px;
     }
+    
     .logost img{
-        max-width: 50px;
+        max-width: 40px;
         width: 100%;
         height: auto;
     }
