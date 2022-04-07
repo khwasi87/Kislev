@@ -18,9 +18,7 @@ $('.sub').click(function() {
 
 $('.owl-carousel').owlCarousel({
   loop:true,
-  center: true,
   autoHeight:true,
-  margin:10,
   responsiveClass:true,
   responsive:{
       0:{
