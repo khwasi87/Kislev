@@ -127,11 +127,11 @@
     }
 
     .btntxt,.btntxt1{
-        display: block!important;
+        display: block;
     }
 
     .btnotxt,.btnotxt1{
-        display: none!important;
+        display: none;
     }
 
     .item{
@@ -139,9 +139,6 @@
         margin: 0 10px;
     }
 
-    .owl-item.cloned {
-        width: 366px!important;
-    }
 }
 
 @media screen and (max-width:425px) {
@@ -192,23 +189,15 @@
         padding:0;
     }
 
-    .owl-item.cloned {
-        width: 370px!important;
-    }
-
     .content-tablesm {
         background-color: var(--white);
         margin: 14px 0;
         color: var(--Text);
     }
-    
-}
 
-@media screen and (max-width:375px) {
-    .owl-item.cloned {
-        width: 356px!important;
+    section {
+        margin: 20px auto;
+        padding: 5px 10px;
     }
-    .logost img,div{
-        padding:0;
-    }
+    
 }
