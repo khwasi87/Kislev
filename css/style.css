@@ -19,6 +19,9 @@
 /* header */
 
 header{
+    max-width:1366px;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,6 +82,8 @@ header{
 /* main container */
 
 .container{
+    max-width:1366px;
+    width: 100%;
     padding: 32px;
     margin: 16px auto;
     background-color: var(--mainBg);
@@ -120,7 +125,7 @@ section{
 }
 
 form select{
-    webkit-appearance: none;
+    appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 10px 20px;
@@ -155,7 +160,7 @@ form{
     align-items: center;
     background-color: var(--white);
     border-radius: 4px;
-    padding: 10px;
+    padding: 12px;
     position: relative;
 }
 
