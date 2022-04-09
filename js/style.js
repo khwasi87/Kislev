@@ -1,15 +1,9 @@
 var total;
-<<<<<<< HEAD
-$('.field').change(function() {
-}).trigger('change');
-
-=======
 
 $('.field').change(function() {
 
 }).trigger('change');
 
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
 $('.add').click(function() {
   var target = $('.field', this.parentNode)[0];
   target.value = +target.value + 1;
@@ -20,9 +14,6 @@ $('.sub').click(function() {
   if (target.value > 0) {
     target.value = +target.value - 1;
   }
-<<<<<<< HEAD
-});
-=======
 });
 
 $('.owl-carousel').owlCarousel({
@@ -42,4 +33,3 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
