@@ -21,7 +21,7 @@
 header{
     max-width:1366px;
     width: 100%;
-    margin: auto;
+    margin: 5px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,18 @@ header{
 }
 
 .filter{
-    padding:0 16px
+    padding:0 16px;
+}
+
+.filter .fa-solid{
+    padding:0 16px;
+    color: #9C9D9D;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.filter .fa-solid:hover{
+    color: var(--Text);
 }
 
 .searcharea{
@@ -70,6 +81,12 @@ header{
     display: inline-block;
     text-align: center;
     margin: 0 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sideicons ul li:hover{
+    color: var(--Text);
 }
 
 .sideicons{
