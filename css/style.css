@@ -1,9 +1,8 @@
 *{
-    font-family: Calibri;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    user-select: none;
 }
 
 :root{
@@ -13,13 +12,8 @@
     --iconscolor : #9C9D9D;
     --mainBg:#E8E8E8;
     --white:#ffffff;
-<<<<<<< HEAD
-    --danger:#e6402b;
-    --check:#24cc5c;  
-=======
     --check:#1be274fa;
     --danger:#f32121fb;
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
 }
 
 /* header */
@@ -56,7 +50,6 @@ header{
     font-size: 1rem;
     font-style: italic;
     color: var(--Text);
-    
 }
 
 .searcharea button{
@@ -142,13 +135,6 @@ form select{
     background-size: 10px;
 }
 
-form select option{
-    background-color: var(--white);
-}
-form select option:hover{
-    background-color: var(--main)
-}
-
 form{
     font-size: 1rem;
 }
@@ -169,11 +155,7 @@ form{
     align-items: center;
     background-color: var(--white);
     border-radius: 4px;
-<<<<<<< HEAD
-    padding: 4px;
-=======
     padding: 10px;
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
     position: relative;
 }
 
@@ -208,7 +190,6 @@ form{
 .addbtn button{
     background-color: var(--main);
     border-radius: 30px;
-    color: var(--Text);
     border: 0;
     width: 100%;
     padding: 10px 15px;
@@ -217,10 +198,7 @@ form{
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
 .cartbtn{
     display: flex;
     align-items: center;
@@ -284,18 +262,12 @@ input::-webkit-inner-spin-button {
 
 .content-table{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--white);
     margin: 10px auto;
     padding: 14px;
     color: var(--Text);
-}
-
-.content-table .infos{
-    max-width: 100px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .content-table .infoT p{
@@ -314,21 +286,10 @@ input::-webkit-inner-spin-button {
     color: var(--Text);
 }
 
-<<<<<<< HEAD
-.content-table .fa-circle-check{
-    color: var(--check);
-}
-.content-table .fa-circle-exclamation{
-    color: var(--main);
-}
-.content-table .fa-circle-xmark{
-    color: var(--danger);
-=======
 .content-table .infos{
     max-width: 150px;
     width: 100%;
     box-sizing: border-box;
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
 }
 
 .addbtn .btntxt1{
@@ -348,8 +309,6 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
-<<<<<<< HEAD
-=======
 .infos .fa-circle-check{
     color: var(--check);
 }
@@ -360,24 +319,18 @@ input::-webkit-inner-spin-button {
     color: var(--danger)
 }
 
->>>>>>> b13861edb2552d8bc98d08bf0f4c99418c652331
 /* section table end */
 
 .btnfooter button{
     display: block;
     margin: 15px auto;
     width: 100%;
-    padding: 12px 0;
+    padding: 15px 0;
     background: transparent;
     border: 1px solid var(--Text);
     border-radius: 30px;
     cursor: pointer;
-    transition: 0.3s;
 
-}
-
-.btnfooter button:hover{
-    background-color: var(--iconscolor);
 }
 
 .btnfooter button a{
