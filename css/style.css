@@ -1,8 +1,9 @@
 *{
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-family: Calibri;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 :root{
@@ -12,6 +13,8 @@
     --iconscolor : #9C9D9D;
     --mainBg:#E8E8E8;
     --white:#ffffff;
+    --danger:#e6402b;
+    --check:#24cc5c;  
 }
 
 /* header */
@@ -44,6 +47,7 @@ header{
     font-size: 1rem;
     font-style: italic;
     color: var(--Text);
+    
 }
 
 .searcharea button{
@@ -115,6 +119,13 @@ form select{
     background-size: 10px;
 }
 
+form select option{
+    background-color: var(--white);
+}
+form select option:hover{
+    background-color: var(--main)
+}
+
 form{
     font-size: 1rem;
 }
@@ -133,6 +144,10 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 4px;
+    position: relative;
 }
 
 .carousalimg img{
@@ -163,17 +178,10 @@ form{
     color: var(--Text);
 }
 
-
-.carousalbox{
-    background-color: var(--white);
-    border-radius: 4px;
-    padding: 8px;
-    position: relative;
-}
-
 .addbtn button{
     background-color: var(--main);
     border-radius: 30px;
+    color: var(--Text);
     border: 0;
     width: 100%;
     padding: 10px 15px;
@@ -181,23 +189,6 @@ form{
     font-weight: 600;
     cursor: pointer;
 }
-
-.addbtn .btntxt1{
-    background-color: transparent;
-    border:1px solid var(--main);
-    border-radius: 30px;
-}
-
-.addbtn .btnotxt1{
-    background-color: transparent;
-    border:1px solid var(--main);
-    border-radius: 30px;
-}
-
-.btnotxt,.btnotxt1{
-    display: none;
-}
-
 
 .cartbtn{
     display: flex;
@@ -262,12 +253,18 @@ input::-webkit-inner-spin-button {
 
 .content-table{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--white);
     margin: 10px auto;
     padding: 14px;
     color: var(--Text);
+}
+
+.content-table .infos{
+    max-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .content-table .infoT p{
@@ -286,18 +283,50 @@ input::-webkit-inner-spin-button {
     color: var(--Text);
 }
 
+.content-table .fa-circle-check{
+    color: var(--check);
+}
+.content-table .fa-circle-exclamation{
+    color: var(--main);
+}
+.content-table .fa-circle-xmark{
+    color: var(--danger);
+}
+
+.addbtn .btntxt1{
+    background-color: transparent;
+    border:1px solid var(--main);
+    border-radius: 30px;
+    padding: 10px 30px!important;
+}
+
+.addbtn .btnotxt1{
+    background-color: transparent;
+    border:1px solid var(--main);
+    border-radius: 30px;
+}
+
+.btnotxt,.btnotxt1{
+    display: none;
+}
+
 /* section table end */
 
 .btnfooter button{
     display: block;
     margin: 15px auto;
     width: 100%;
-    padding: 15px 0;
+    padding: 12px 0;
     background: transparent;
     border: 1px solid var(--Text);
     border-radius: 30px;
     cursor: pointer;
+    transition: 0.3s;
 
+}
+
+.btnfooter button:hover{
+    background-color: var(--iconscolor);
 }
 
 .btnfooter button a{

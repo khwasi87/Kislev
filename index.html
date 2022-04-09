@@ -14,7 +14,7 @@
         <div class="filter">
             <i class="fa-solid fa-sliders fa-2x" style="color: #9C9D9D;"></i>
         </div>
-        <form action="/action_page.php" class="searcharea">
+        <form action="https://www.google.com/search" method="get" class="searcharea">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><img src="img/magnifying-glass-solid.svg" width="20" alt=""></button>
         </form>
@@ -86,9 +86,9 @@
                         </div>
                         <div class="cartbtn">
                             <div class="addminus">
-                                <button id="minus"><i class="fa-solid fa-minus"></i></button>
-                                <input type="number" value="0" id="numb">
-                                <button id="add"><i class="fa-solid fa-plus"></i></button>
+                                <button id="sub" class="sub"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="1" value="0" class="field">
+                                <button id="add" class="add"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="addbtn">
                                 <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
@@ -122,9 +122,9 @@
                         </div>
                         <div class="cartbtn">
                             <div class="addminus">
-                                <button id="minus1"><i class="fa-solid fa-minus"></i></button>
-                                <input type="number" value="0" id="numb1">
-                                <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                                <button id="sub1" class="sub"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="2" value="0" class="field">
+                                <button id="add3" class="add"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="addbtn">
                                 <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
@@ -140,17 +140,17 @@
                     <p>205/55 R16 H</p>
                     <p>SUV</p>
                 </div>
-                <div class="info">
+                <div class="infos">
                     <p>Stock <i class="fa-solid fa-circle-check"></i></p>
-                    <p><strong>8 Tires Left</strong></p>
+                    <!-- <p><strong>8 Tires Left</strong></p> -->
                 </div>
                 <div class="info">
                     <p>price ₪340</p>
                 </div>
                 <div class="addminus">
-                    <button id="minus1"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="0" id="numb1">
-                    <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                    <button id="sub2" class="sub"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" id="3" value="0" class="field">
+                    <button id="add2" class="add"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="infoT">
                     <p>Total</p>
@@ -168,17 +168,17 @@
                     <p>205/55 R16 H</p>
                     <p>SUV</p>
                 </div>
-                <div class="info">
-                    <p>Stock <i class="fa-solid fa-circle-check"></i></p>
-                    <p><strong>8 Tires Left</strong></p>
+                <div class="infos">
+                    <p>Stock <i class="fa-solid fa-circle-exclamation"></i></p>
+                    <p>8 Tires Left</p>
                 </div>
                 <div class="info">
                     <p>price ₪340</p>
                 </div>
                 <div class="addminus">
-                    <button id="minus1"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="0" id="numb1">
-                    <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                    <button id="sub3" class="sub"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" id="4" value="0" class="field">
+                    <button id="add3" class="add"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="infoT">
                     <p>Total</p>
@@ -196,17 +196,17 @@
                     <p>205/55 R16 H</p>
                     <p>SUV</p>
                 </div>
-                <div class="info">
+                <div class="infos">
                     <p>Stock <i class="fa-solid fa-circle-xmark"></i></p>
-                    <p><strong>8 Tires Left</strong></p>
+                    <p style="color: #e6402b;"><b>Back in 1 week</b></p>
                 </div>
                 <div class="info">
                     <p>price ₪340</p>
                 </div>
                 <div class="addminus">
-                    <button id="minus1"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="0" id="numb1">
-                    <button id="add1"><i class="fa-solid fa-plus"></i></button>
+                    <button id="sub4" class="sub"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" id="5" value="0" class="field">
+                    <button id="add4" class="add"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="infoT">
                     <p>Total</p>
@@ -222,6 +222,7 @@
             </div>
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/style.js"></script>
 </body>
 </html>
