@@ -11,7 +11,7 @@
 
     .carousalbox .carousalimg, .carboxinfo {
         padding: 4px;
-        margin: 0px 6px;
+        margin: 10px 4px;
     }
 
     .btnotxt,.btnotxt1{
@@ -22,4 +22,182 @@
         display: none;
     }
 
+}
+
+@media screen and (max-width:768px) {
+    
+    .containersm{
+        display: block;
+        padding: 0 20px;
+        margin: 16px auto;
+        background-color: var(--mainBg);
+    }
+
+    .container{
+        display: none;
+    }
+
+    .boxmainsm{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousalboxsm{
+        background-color: var(--white);
+        border-radius: 4px;
+        padding: 0;
+        position: relative;
+    }
+
+    .carinfoboxsm{
+        display: flex;
+        align-items: center;
+    }
+
+    .suvifosm{
+        display: flex;
+        align-items:  center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .infosm{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .infosm div,.suvifosm div{
+        padding: 0 6px;
+    }
+
+    .content-tablesm{
+        background-color: var(--white);
+        margin: 10px 8px;
+        padding: 14px;
+        color: var(--Text);
+    }
+
+    .maintablesm{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tablecontsm{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tablecontsm div h3,.logost{
+        padding: 6px 16px;
+    }
+
+    .tablecontsm h3{
+        font-size: 1rem;
+        padding: 4px;
+    }
+
+    .prtotal{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .prtotal div:nth-child(2){
+        padding: 5px 14px;
+    }
+
+    .logost{
+        display: flex;
+        align-items: center;
+    }
+
+    .logost .infos{
+        padding: 0 14px;
+    }
+    
+    .logost img{
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .btntxt,.btntxt1{
+        display: block;
+    }
+
+    .btnotxt,.btnotxt1{
+        display: none;
+    }
+
+    .item{
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .addminus {
+        width: 100%;
+        max-width: 124px;
+    }
+
+    .containersm {
+        display: block;
+        padding: 0 6px;
+        margin: 16px auto;
+        background-color: var(--mainBg);
+    }
+
+    .carinfoboxsm{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .maintablesm{
+        display: block
+    }
+
+    .addbtn .btntxt1 {
+        background-color: transparent;
+        border: 1px solid var(--main);
+        border-radius: 30px;
+        padding: 10px 21px!important;
+    }
+
+    .filtersection p{
+        display: block!important;
+        margin: 10px auto!important;
+    }
+
+    .searcharea input{
+        display: none;
+    }
+
+    .searcharea{
+        width: 100%;
+        max-width: 50px;
+    }
+
+    .logost img,div{
+        padding:0;
+    }
+
+    .content-tablesm {
+        background-color: var(--white);
+        margin: 14px 0;
+        color: var(--Text);
+    }
+
+    section {
+        margin: 20px auto;
+        padding: 5px 10px;
+    }
+    
 }
